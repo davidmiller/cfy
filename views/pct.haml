@@ -1,0 +1,7 @@
+%h2= @pct.name
+%p
+  This is a PCT Page
+- @pct.practices.all.each do |pract|
+  %p
+    %a{href: pract.url}
+      = pract.name

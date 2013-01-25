@@ -1,0 +1,7 @@
+%h2= @pract.name
+%ul
+  %li= @pract.email
+  %li= @pract.slug
+  - if @pract.ccg
+    %li= @pract.ccg.name
+  %li= @pract.pct.name
